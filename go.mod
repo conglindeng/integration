@@ -1,4 +1,4 @@
-module integration
+module github.com/conlindeng/integration
 
 go 1.18
 
