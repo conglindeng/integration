@@ -32,7 +32,7 @@ func main() {
 func newRouter() *mux.Router {
 	r := mux.NewRouter()
 
-	r.HandleFunc("/hello", helloHandler).Methods("POST")
+	r.HandleFunc("/hello", helloHandler).Methods("GET")
 
 	dir := http.Dir("./assets/")
 	staticFileHandler := http.StripPrefix("/assets/", http.FileServer(dir))
@@ -55,4 +55,3 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(s)
 	fmt.Fprintf(w, "Hello World!")
 }
-
