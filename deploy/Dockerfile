@@ -14,4 +14,4 @@ RUN cd /app/src/github.com/conglindeng/integration && go mod download  && go bui
 
 EXPOSE 9090
 
-CMD [ "/app/src/github.com/conglindeng/integration/integration" ]
+CMD [ "" ]
